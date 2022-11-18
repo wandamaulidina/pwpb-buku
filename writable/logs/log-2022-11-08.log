@@ -1,0 +1,319 @@
+CRITICAL - 2022-11-08 19:39:56 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 293.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-11-08 20:08:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#7 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#12 {main}
+CRITICAL - 2022-11-08 20:08:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-11-08 20:08:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#7 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#12 {main}
+CRITICAL - 2022-11-08 20:08:29 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-11-08 20:08:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#7 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#12 {main}
+CRITICAL - 2022-11-08 20:08:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-11-08 20:08:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#7 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#12 {main}
+CRITICAL - 2022-11-08 20:08:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-11-08 20:09:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#7 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#12 {main}
+CRITICAL - 2022-11-08 20:09:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-11-08 20:09:20 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#10 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in D:\Server\htdocs\xirpl2\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Server\htdocs\xirpl2\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Server\htdocs\xirpl2\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Server\htdocs\xirpl2\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Server\htdocs\xirpl2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Server\htdocs\xirpl2\app\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\Server\htdocs\xirpl2\app\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+#7 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(904): App\Controllers\Buku->index()
+#8 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+#9 D:\Server\htdocs\xirpl2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Server\htdocs\xirpl2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\Server\htdocs\xirpl2\system\Commands\Server\rewrite.php(43): require_once('D:\\Server\\htdoc...')
+#12 {main}
+CRITICAL - 2022-11-08 20:09:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `buku`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BukuModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Buku.php(20): App\Models\BukuModel->getBuku()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Buku->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buku))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-08 20:31:36 --> Undefined property: App\Controllers\orang::$orangModel
+in APPPATH\Controllers\Orang.php on line 20.
+ 1 APPPATH\Controllers\Orang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\orang::$orangModel', 'APPPATH\\Controllers\\Orang.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-08 20:33:04 --> Undefined property: App\Controllers\orang::$orangModel
+in APPPATH\Controllers\Orang.php on line 20.
+ 1 APPPATH\Controllers\Orang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\orang::$orangModel', 'APPPATH\\Controllers\\Orang.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

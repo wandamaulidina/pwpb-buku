@@ -1,0 +1,128 @@
+CRITICAL - 2022-11-14 20:01:25 --> Call to undefined method App\Models\OrangModel::getBuku
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Orang.php(41): CodeIgniter\Model->__call('getBuku', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:03:44 --> Call to undefined method App\Models\OrangModel::getOrang
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Orang.php(41): CodeIgniter\Model->__call('getOrang', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:03:46 --> Call to undefined method App\Models\OrangModel::getOrang
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Orang.php(41): CodeIgniter\Model->__call('getOrang', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:06:19 --> Call to undefined method App\Models\OrangModel::getOrang
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Orang.php(41): CodeIgniter\Model->__call('getOrang', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:07:52 --> Call to undefined method App\Models\OrangModel::getOrang
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Orang.php(41): CodeIgniter\Model->__call('getOrang', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:08:00 --> Call to undefined method App\Models\OrangModel::getOrang
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Orang.php(41): CodeIgniter\Model->__call('getOrang', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:10:28 --> Call to undefined method App\Models\OrangModel::getOrang
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Orang.php(41): CodeIgniter\Model->__call('getOrang', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:11:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\Orang\detail.php on line 10.
+ 1 APPPATH\Views\Orang\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Orang\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Orang\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('orang/detail', [], true)
+ 5 APPPATH\Controllers\Orang.php(43): view('orang/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:12:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\Orang\detail.php on line 13.
+ 1 APPPATH\Views\Orang\detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Orang\\detail.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Orang\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('orang/detail', [], true)
+ 5 APPPATH\Controllers\Orang.php(43): view('orang/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:13:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\Orang\detail.php on line 13.
+ 1 APPPATH\Views\Orang\detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Orang\\detail.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Orang\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('orang/detail', [], true)
+ 5 APPPATH\Controllers\Orang.php(43): view('orang/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:14:09 --> Undefined variable: data
+in APPPATH\Views\Orang\detail.php on line 13.
+ 1 APPPATH\Views\Orang\detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\Orang\\detail.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Orang\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('orang/detail', [], true)
+ 5 APPPATH\Controllers\Orang.php(43): view('orang/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 20:14:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\Orang\detail.php on line 13.
+ 1 APPPATH\Views\Orang\detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Orang\\detail.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Orang\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('orang/detail', [], true)
+ 5 APPPATH\Controllers\Orang.php(43): view('orang/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-14 23:06:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\Orang\detail.php on line 13.
+ 1 APPPATH\Views\Orang\detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\Orang\\detail.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Orang\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('orang/detail', [], true)
+ 5 APPPATH\Controllers\Orang.php(43): view('orang/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\orang->detail('detail')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\orang))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
